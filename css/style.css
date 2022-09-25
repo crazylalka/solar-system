@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img.sun {
+    width: 150px;
+    height: 150px;
+    animation: none;
+    position: relative;
+}
+
+div {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+div img {
+    animation-name: rotation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.mercury {
+    width: 170px;
+    height: 170px;
+}
+
+.mercury img {
+    width: 20px;
+    left: calc(100% - 10px);
+    top: calc(50% - 10px);
+    transform-origin: -75px center;
+    animation-duration: 0.8s;
+}
+
+.venus {
+    width: 250px;
+    height: 250px;
+}
+
+.venus img {
+    width: 40px;
+    left: calc(100% - 20px);
+    top: calc(50% - 20px);
+    animation-duration: 2.25s;
+    transform-origin: -105px center;
+}
+
+.earth {
+    width: 355px;
+    height: 355px;
+}
+
+.earth img {
+    width: 45px;
+    left: calc(100% - 22.5px);
+    top: calc(50% - 22.5px);
+    animation-duration: 3.65s;
+    transform-origin: -155px center;
+}
+
+.mars {
+    width: 465px;
+    height: 465px;
+}
+
+.mars img {
+    width: 25px;
+    left: calc(100% - 12.5px);
+    top: calc(50% - 12.5px);
+    transform-origin: -220px center;
+    animation-duration: 6.87s;
+}
+
+.jupiter {
+    width: 665px;
+    height: 665px;
+}
+
+.jupiter img {
+    width: 100px;
+    left: calc(100% - 50px);
+    top: calc(50% - 50px);
+    transform-origin: -280px center;
+    animation-duration: 43.8s;
+}
+
+.saturn {
+    width: 880px;
+    height: 880px;
+}
+
+.saturn img {
+    width: 75px;
+    left: calc(100% - 37.5px);
+    top: calc(50% - 37.5px);
+    transform-origin: -400px center;
+    animation-duration: 105s;
+}
+
+.uranus {
+    width: 1060px;
+    height: 1060px;
+}
+
+.uranus img {
+    width: 60px;
+    left: calc(100% - 30px);
+    top: calc(50% - 30px);
+    transform-origin: -500px center;
+    animation-duration: 306s;
+}
+
+.neptune {
+    width: 1240px;
+    height: 1240px;
+}
+
+.neptune img {
+    width: 60px;
+    left: calc(100% - 30px);
+    top: calc(50% - 30px);
+    transform-origin: -590px center;
+    animation-duration: 602s;
+}
+
+html {
+    background-image: url('../src/photo-1534796636912-3b95b3ab5986.jfif');
+}
